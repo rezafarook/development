@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+for val in `cat trades.txt|awk -F","|sort -u` 
+ do 
+  gerp $val trades.txt|awk -F"," '{total += $1}END{print total}'
+ done
