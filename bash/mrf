@@ -1,0 +1,26 @@
+counter=0
+
+function theTrap()
+ {
+  let counter++
+  if [ $counter == 1 ]
+   then
+     echo "Clock Struck One"
+  elif [ $counter == 2 ]
+   then
+     echo "Clock Struck Two"
+  else
+   echo "Bye bye ..."
+   exit
+  fi
+
+}
+
+trap theTrap SIGINT
+
+while true
+ do
+  echo "Go for it"
+  sleep 3
+ done
+   

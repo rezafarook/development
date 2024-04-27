@@ -1,0 +1,27 @@
+counter=0
+
+
+function catchMe()
+{
+
+let counter++
+echo
+if [ $counter == 1 ]
+ then
+   echo "Strike One"
+elif [ $counter == 2 ]
+ then
+   echo "Strike Two"
+else
+  echo "Bye Bye"
+  exit
+fi
+
+}
+trap catchMe SIGINT
+
+while true
+do
+echo "Zzzzz ...."
+sleep 2
+done

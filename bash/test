@@ -1,0 +1,27 @@
+#!/usr/bin/bash
+
+function me()
+{
+echo
+let counter++
+
+if [ $counter == 1 ] 
+ then
+   echo "Strike One"
+elif [ $counter == 2 ] 
+ then
+   echo "Strike Two"
+else
+   echo "Nice Knowing You"
+   exit
+fi
+
+}
+
+trap me SIGINT
+
+while true
+do
+echo "Allo Alo"
+sleep 2
+done
