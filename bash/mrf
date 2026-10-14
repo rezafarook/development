@@ -20,7 +20,7 @@ trap theTrap SIGINT
 
 while true
  do
-  echo "Go for it"
+  echo "Control C it"
   sleep 3
  done
    
