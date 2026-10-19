@@ -23,4 +23,10 @@ while true
   echo "Control C it"
   sleep 3
  done
-   
+
+
+while true
+ do
+  echo "Control C it"
+  sleep 3
+ done
